@@ -1,0 +1,221 @@
+
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Discover and read your favorite books online. Access a wide variety of genres and authors.">
+  <title>Online Bookstore</title>
+  <style>
+    /* Global Styles */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      background-color: #f4f4f9;
+      scroll-behavior: smooth;
+    }
+	header {
+      background-color: #6b6d70;
+      color: white;
+      text-align: center;
+      padding: 40px 0;
+    }
+
+    header h1 {
+      font-size: 36px;
+    }
+
+    /* Navigation */
+    nav {
+      background-color: #444;
+      padding: 10px;
+      text-align: center;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      padding: 10px 20px;
+      margin: 0 10px;
+      border-radius: 5px;
+      transition: background-color 0.3s;
+    }
+
+    nav a:hover {
+      background-color: #575757;
+    }
+
+    /* Main Content Sections */
+    .section {
+      padding: 50px 20px;
+      text-align: center;
+    }
+
+    h1, h2 {
+      color: #333;
+    }
+
+    /* Genre Cards */
+    .genre-cards, .book-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 30px;
+      justify-content: center;
+    }
+
+    .genre-card, .book-item {
+      background-color: white;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      width: 250px;
+      height: 300px;
+      text-align: center;
+      overflow: hidden;
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    .genre-card:hover, .book-item:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    }
+
+    .genre-card img, .book-item img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+    }
+
+    .genre-card h3, .book-item h3 {
+      font-size: 20px;
+      margin: 15px 0;
+      color: #333;
+    }
+
+    .genre-card p, .book-item p {
+      font-size: 14px;
+      color: #777;
+      margin: 0 10px;
+    }
+
+    /* Footer */
+    footer {
+      background-color: #282c34;
+      color: white;
+      text-align: center;
+      padding: 20px 0;
+      margin-top: 50px;
+    }
+  </style>
+</head>
+<body>
+<header>
+    <h1>Online Bookstore</h1>
+    <p>Your favorite books, anytime, anywhere</p>
+   </div>
+  </header>
+  <!-- Navigation -->
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#books">Books</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <!-- Home Section: Genre Cards -->
+  <section id="home" class="section">
+    <h2>Explore Genres</h2>
+    <div class="genre-cards">
+      <div class="genre-card">
+        <img src="https://img.freepik.com/free-photo/books-stack-isolated-white_155003-11614.jpg" alt="Fiction">
+        <h3>Fiction</h3>
+        <p>Thrilling and emotional tales from imaginary worlds.</p>
+        <button  >book-item</button>
+      </div>
+      <div class="genre-card">
+        <img src="https://img.freepik.com/free-vector/science-fiction-background_23-2148571359.jpg" alt="Science Fiction">
+        <h3>Science Fiction</h3>
+        <p>Explore futuristic technology and life beyond Earth.</p>
+        <button>book-item</button>
+      </div>
+      <div class="genre-card">
+        <img src="https://img.freepik.com/free-vector/self-development-concept-illustration_114360-7340.jpg" alt="Self-Help">
+        <h3>Self-Help</h3>
+        <p>Boost your potential with motivational guides.</p>
+        <button>book-item</button>
+      </div>
+      <div class="genre-card">
+        <img src="https://img.freepik.com/free-photo/book-with-glasses-near-coffee-cup_23-2149311571.jpg" alt="Mystery">
+        <h3>Mystery</h3>
+        <p>Dive into stories filled with suspense and intrigue.</p>
+        <button>book-item</button>
+      </div>
+      <div class="genre-card">
+        <img src="https://img.freepik.com/free-photo/closeup-shot-stack-magical-books-candles-roses-bouquet_181624-36032.jpg" alt="Fantasy">
+        <h3>Fantasy</h3>
+        <p>Discover magical realms and epic adventures.</p>
+        <button>book-item</button>
+      </div>
+      <div class="genre-card">
+        <img src="https://img.freepik.com/free-vector/non-fiction-concept-illustration_114360-7491.jpg" alt="Non-Fiction">
+        <h3>Non-Fiction</h3>
+        <p>Learn about real-world topics and enhance your knowledge.</p>
+        <button>book-item</button>
+      </div>
+      <div class="genre-card">
+        <img src="https://img.freepik.com/free-photo/history-books_144627-28273.jpg" alt="History">
+        <h3>History</h3>
+        <p>Discover the events that shaped our world.</p>
+        <button>book-item</button>
+      </div>
+      <div class="genre-card">
+        <img src="https://img.freepik.com/free-photo/romance-books_144627-29189.jpg" alt="Romance">
+        <h3>Romance</h3>
+        <p>Feel the love and passion with heartfelt stories.</p>
+        <button>order now</button>
+      </div>
+      <!-- Add more genres as needed -->
+    </div>
+  </section>
+
+  <!-- Books Section: Books grouped by Genre -->
+  <section id="books" class="section">
+    <h2>Books</h2>
+    <div class="book-list">
+      <div class="book-item">
+        <img src="https://img.freepik.com/free-photo/books-stack-isolated-white_155003-11614.jpg" alt="Book 1">
+        <h3>The Great Adventure</h3>
+        <p>A thrilling fiction adventure.</p>
+        <button>book-item</button>
+      </div>
+      <div class="book-item">
+        <img src="https://img.freepik.com/free-vector/science-fiction-background_23-2148571359.jpg" alt="Book 2">
+        <h3>Future Tech</h3>
+        <p>An insightful sci-fi journey.</p>
+        <button>book-item</button>
+      </div>
+      <div class="book-item">
+        <img src="https://img.freepik.com/free-vector/self-development-concept-illustration_114360-7340.jpg" alt="Book 3">
+        <h3>Master Your Mindset</h3>
+        <p>Self-help guide for personal growth.</p>
+        <button>book-item</button>
+      </div>
+      <!-- Add more books for different genres as needed -->
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="section">
+    <h2>Contact Us</h2>
+    <p>For inquiries, please email us at <a href="mailto:info@onlinebookstore.com">info@onlinebookstore.com</a> or call us at (123) 456-7890.</p>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2024 Online Bookstore. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
